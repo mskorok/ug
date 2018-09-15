@@ -1,0 +1,355 @@
+
+.app-auth {
+  // .app-auth section styles
+  text-align: center;
+
+  // override bootstrap styles inside section
+  & .btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  & .checkbox {
+    text-align: left;
+
+    & label {
+      padding-left: 0.25rem;
+    }
+  }
+
+
+
+  // nav, logo, back button
+  &-nav {
+    @include app-section();
+    min-height: 120px;
+  }
+
+    &-logo-col {
+      text-align: left;
+    }
+
+    &-back-col {
+      text-align: right;
+    }
+
+    &-logo {
+      fill: #FFF;
+      height: 2rem;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    &-logo:hover {
+      opacity: 0.7;
+    }
+
+
+
+  // header, title, subtitle
+  /*&-header {
+    @include app-section-x();
+  }*/
+
+    &-title {
+      font-weight: 700;
+    }
+
+
+
+  // main
+  &-main {
+    @include app-section-x(1rem);
+  }
+
+
+
+  // footer
+  &-footer {
+    @include app-section-x(1rem);
+    //position: absolute;
+    //bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+
+
+  // step 1 (initial screen)
+  &-social-block {
+    //border-right: 1px solid #FFF;
+    height: 200px;
+    padding-left: 8rem;
+    line-height: 4rem;
+  }
+
+  &-middle-block {
+    //height: 40px;
+  }
+
+  &-or {
+    height: 100px;
+    padding-top: 66px;
+  }
+
+  &-line:after {
+    height: 60px;
+    position: absolute;
+    content:"";
+    z-index: -1;
+    left: 50%;
+    border-left: 1px solid #FFF;
+  }
+
+  &-email-block {
+    //height: 200px;
+    padding-right: 8rem;
+
+  }
+
+
+
+  // step 2
+  &-add-photo {
+    background: url(#{$img_path}/app/auth/add_photo.png) no-repeat center center / cover;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  &-photo-container {
+    padding: 0 15px 15px 15px;
+    text-align: left;
+    display: flex;
+  }
+
+  &-photo-col {
+    text-align: left;
+    margin-left: 1.5rem;
+    align-self: center;
+
+    a {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &-avatar {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  &-checkbox {
+    background: url(#{$img_path}/app/auth/checkbox_empty.png) no-repeat center center / cover;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-right: 12px;
+
+    &.checked {
+      background: url(#{$img_path}/app/auth/checkbox_checked.png) no-repeat center center / cover;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &-radio-group {
+    box-shadow: $app-shadow-2;
+    border-radius: $input-border-radius;
+
+    & .app-auth-radio:first-child {
+      border-top-left-radius: $input-border-radius;
+      border-bottom-left-radius: $input-border-radius;
+
+      &:not(.checked) {
+        box-shadow: inset -9px 0 6px -6px #84ab9e;
+      }
+    }
+
+    & .app-auth-radio:last-child {
+      border-top-right-radius: $input-border-radius;
+      border-bottom-right-radius: $input-border-radius;
+
+      &:not(.checked) {
+        box-shadow: inset 9px 0 6px -6px #84ab9e;
+      }
+    }
+  }
+
+  &-radio {
+    color: #84ab9e;
+    background: #9ff7de;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: 0.85rem;
+    height: auto !important;
+    float: left;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #84e7d1;
+    }
+
+    &.checked {
+      color: $input-color;
+      background-color: $input-bg;
+
+      &:hover {
+        background-color: #EEE;
+      }
+
+      &::before {
+        content: "";
+        background: url(#{$img_path}/app/auth/radio_checked.png) no-repeat center center / cover;
+        width: 14px;
+        height: 11px;
+        display: inline-block;
+        margin-right: 12px;
+        margin-bottom: 1px;
+      }
+    }
+  }
+
+
+
+  // step 3
+
+  &-interests-control {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &-load-more {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5rem;
+    border: 2px solid #c6fcea;
+    opacity: 0.6;
+    font-weight: 700;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 1rem;
+    text-align: left;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+#add_photo:hover {
+  cursor: pointer;
+}
+
+#interests {
+  margin: 2rem -1rem;
+}
+
+#search_autocomplete {
+  max-width: 400px;
+  margin: 0px auto;
+}
+
+// override bootstrap
+.btn:disabled {
+  background-color: #0ac99c;
+  border: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #0ac99c;
+    border: none;
+  }
+}
+
+.app-auth-photo-btn {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+
+  & > span {
+    padding-left: 0.5rem;
+  }
+
+  color: $app-gradient-green-link-color;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: $app-gradient-green-link-hover-color;
+  }
+}
+
+.app-auth-btn {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+@include media-breakpoint-down(lg) {
+
+  .app-auth {
+
+    &-social-block {
+      //border-right: 1px solid #FFF;
+      //height: 200px;
+      padding-left: inherit;
+    }
+
+    &-email-block {
+      //height: 200px;
+      padding-right: inherit;
+
+    }
+
+    &-line:after {
+      height: 60px;
+      position: absolute;
+      content:"";
+      z-index: -1;
+      left: 50%;
+      border-top: 1px solid #FFF;
+    }
+
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+
+  .app-auth {
+
+    &-back-col {
+      text-align: left;
+    }
+
+    &-nav {
+      margin-bottom: 3rem;
+    }
+
+    &-main {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &-logo {
+      margin-bottom: 1rem;
+    }
+
+    &-or {
+      padding-top: 0;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+}

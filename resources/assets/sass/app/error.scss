@@ -1,0 +1,48 @@
+
+.app-error {
+  background: $app-color-grey-lightest;
+  text-align: center;
+  //color: #FFF;
+  padding-top: 18vh;
+  padding-bottom: 18vh;
+
+  & h1 {
+    font-size: 4rem;
+  }
+
+  & p {
+    font-size: 2rem;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .app-error {
+    padding-top: 13vh;
+    padding-bottom: 13vh;
+
+    & h1 {
+      font-size: 3rem;
+    }
+
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .app-error {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    & h1 {
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: 1rem;
+    }
+    
+    .btn-primary{width: 100%; padding-left: 1rem; padding-right: 1rem; text-align: center;}
+  }
+}

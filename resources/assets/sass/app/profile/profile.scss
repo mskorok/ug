@@ -1,0 +1,40 @@
+
+.app-pub-profile-photo {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.dropdown svg {
+  fill: $app-color-grey;
+  vertical-align: middle;
+}
+
+@include media-breakpoint-down(md) {
+
+  .app-pub-profile-photo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+
+  .app-pub-profile-basic-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .app-pub-profile-basic-text {
+    text-align: center;
+  }
+
+  .app-pub-profile-nav-link {
+    padding-right: 7px !important;
+    padding-left: 7px !important;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .app-pub-profile-save-btn {
+    margin-right: 10px;
+  }
+}

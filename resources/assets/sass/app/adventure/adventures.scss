@@ -1,0 +1,16 @@
+
+.app-adventures {
+  @include app-section;
+  //background-color: #F5F5F5;
+
+  &-title {
+    @include app-heading();
+    text-align: left;
+    margin-bottom: 1rem;
+    color: $app-color-grey;
+  }
+}
+
+.app-adventures-load-section {
+  margin-top: 1.5rem;
+}

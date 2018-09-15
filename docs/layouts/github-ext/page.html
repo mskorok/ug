@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>{{title}}</title>
+    <link type="text/css" rel="stylesheet" href="{{asset 'css/github-markdown.css'}}" >
+    <link type="text/css" rel="stylesheet" href="{{asset 'css/pilcrow.css'}}" >
+    <link type="text/css" rel="stylesheet" href="{{asset 'css/hljs-github.min.css'}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset 'css/custom.css'}}" />
+    <base target="_parent" />
+  </head>
+  <body>
+  {{#if headings}}
+  <div class="row">
+    <menu>
+      <iframe src="{{asset '../toc.html'}}">TOC</iframe>
+    </menu>
+    <main class="markdown-body">
+      {{~> content}}
+    </main>
+  </div>
+  {{else}}
+    <div class="markdown-body">
+      {{~> content}}
+    </div>
+  {{/if}}
+  <script>
+    var broken_links = document.querySelectorAll('a[href=""]');
+    var length = broken_links.length;
+    for (var i = 0; i < length; i++) {
+      broken_links[i].removeAttribute('href');
+    }
+  </script>
+  </body>
+</html>

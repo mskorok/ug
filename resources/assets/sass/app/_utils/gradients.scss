@@ -1,0 +1,15 @@
+
+.app-gradient-green {
+  background: $app-gradient-green fixed;
+  color: $app-gradient-green-text-color;
+
+  & a {
+    color: $app-gradient-green-link-color;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: $app-gradient-green-link-hover-color;
+      text-decoration: $app-gradient-green-link-hover-decoration;
+    }
+  }
+}

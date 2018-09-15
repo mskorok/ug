@@ -1,0 +1,56 @@
+
+.app-footer {
+  @include app-section-x(2.5rem);
+  background-color: #FFF;
+}
+
+.app-footer-divider {
+  margin-top: 8rem;
+  border-bottom: 1px solid $app-color-grey-light;
+}
+
+// col 1
+.app-footer-name {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.app-footer-copyright {
+  margin-bottom: 2.5rem;
+}
+
+// col 3
+.app-footer-socials {
+  margin: 1rem 0;
+  //text-align: center;
+}
+
+svg.app-footer-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: $gray-light;
+  //margin-left: 3rem;
+
+  &:hover {
+    fill: $gray-dark;
+  }
+}
+
+.app-footer-build {
+  color: #BBB;
+  font-size: 0.8rem;
+  text-align: right;
+  margin-top: 3rem;
+}
+
+// col 2
+
+.app-footer-links a {
+  color: $gray-light;
+  display: block;
+  margin-bottom: 1rem;
+
+  &:hover {
+    color: $gray-dark;
+  }
+}

@@ -1,0 +1,27 @@
+
+.app-link-front-block {
+  @include app-link($app-color-green-front, $app-color-green-front, $app-color-green-dark, block);
+}
+
+.app-link-front-dark-block {
+  @include app-link($app-color-green-front-dark, $app-color-green-front-dark, $app-color-green-dark, block);
+}
+
+.app-link-front-darkest-block {
+  @include app-link($app-color-green-front-dark, $app-color-green-front-dark, $app-color-green-darkest, block);
+}
+
+.app-link-green {
+  color: $app-color-green;
+  &:hover {
+    color: $app-color-green-darkest;
+  }
+}
+
+.app-link-grey {
+  color: $app-color-grey;
+  &:hover {
+    color: $app-color-grey-dark;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,186 @@
+
+/***********************************************************
+ FONTS (BASE64)
+***********************************************************/
+@import "build/fonts_base64.scss";
+
+/***********************************************************
+ IMPORT PROJECT VARIABLES AND OVERRIDE BOOTSTRAP 4 VARIABLES
+***********************************************************/
+@import "app/_config/variables";
+@import "app/_config/_bs_variables";
+
+
+/***********************************************************
+ IMPORT BOOTSTRAP 4
+***********************************************************/
+// Core variables and mixins
+//@import "node_modules/bootstrap/scss/custom";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+//$icon-font-path: "/fonts/"; // correct font path
+
+// Reset and dependencies
+@import "node_modules/bootstrap/scss/normalize";
+//@import "node_modules/bootstrap/scss/print";
+
+// Core CSS
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+//@import "node_modules/bootstrap/scss/images";
+//@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+//@import "node_modules/bootstrap/scss/tables";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+
+// Components
+@import "node_modules/bootstrap/scss/animation";
+@import "node_modules/bootstrap/scss/dropdown";
+//@import "node_modules/bootstrap/scss/button-group";
+//@import "node_modules/bootstrap/scss/input-group";
+//@import "node_modules/bootstrap/scss/custom-forms";
+@import "node_modules/bootstrap/scss/nav";
+//@import "node_modules/bootstrap/scss/navbar";
+//@import "node_modules/bootstrap/scss/card";
+//@import "node_modules/bootstrap/scss/breadcrumb";
+//@import "node_modules/bootstrap/scss/pagination";
+//@import "node_modules/bootstrap/scss/labels";
+//@import "node_modules/bootstrap/scss/jumbotron";
+@import "node_modules/bootstrap/scss/alert";
+//@import "node_modules/bootstrap/scss/progress";
+//@import "node_modules/bootstrap/scss/media";
+//@import "node_modules/bootstrap/scss/list-group";
+//@import "node_modules/bootstrap/scss/responsive-embed";
+@import "node_modules/bootstrap/scss/close";
+
+// Components w/ JavaScript
+//@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/tooltip";
+//@import "node_modules/bootstrap/scss/popover";
+//@import "node_modules/bootstrap/scss/carousel";
+
+// Utility classes
+@import "node_modules/bootstrap/scss/utilities";
+
+
+/***********************************************************
+ IMPORT CUSTOM COPIES OF BOOTSTRAP 4
+***********************************************************/
+@import "bootstrap/copy/_navbar";
+
+
+/***********************************************************
+ OVERRIDE/EXTEND BOOTSTRAP 4
+***********************************************************/
+@import "bootstrap/forms";
+@import "core/forms";
+@import "bootstrap/nav";
+@import "bootstrap/text";
+@import "bootstrap/grid";
+@import "bootstrap/dropdowns";
+
+
+/***********************************************************
+ IMPORT 3RD PARTIES
+***********************************************************/
+@import "node_modules/bunnyjs/scss/calendar";
+@import "node_modules/croppie/croppie";
+
+
+/***********************************************************
+ IMPORT PROJECT CORE
+***********************************************************/
+
+// HTML core
+@import "app/_config/links";
+
+// mixins
+@import "app/_mixins/buttons";
+@import "app/_mixins/fluid_sizes";
+@import "app/_mixins/links";
+@import "app/_mixins/user_select";
+
+@import "core/_core"; // html, body, svg, tags, resets, etc
+
+@import "app/error"; // error pages 404/etc
+
+
+/***********************************************************
+ IMPORT APP BOOTSTRAP THEME AND 3RD PARTY THEMES
+***********************************************************/
+@import "app/_bootstrap/alert";
+@import "app/_bootstrap/forms";
+@import "app/_bootstrap/dropdown";
+@import "app/_bootstrap/buttons";
+
+@import "app/_google/place_autocomplete";
+
+/***********************************************************
+ IMPORT APP UTILS
+***********************************************************/
+@import "app/_utils/grid";
+@import "app/_utils/gradients";
+@import "app/_utils/spinner";
+@import "app/_utils/buttons";
+@import "app/_utils/display";
+@import "app/_utils/display_flex";
+@import "app/_utils/alert";
+@import "app/_utils/shadow";
+@import "app/_utils/checkbox";
+@import "app/_utils/icons";
+@import "app/_utils/dropdown";
+@import "app/_utils/border_radius";
+@import "app/_utils/links";
+@import "app/_utils/text";
+@import "app/_utils/colors";
+@import "app/_utils/fluid_sizes";
+@import "app/_utils/tags";
+@import "app/_utils/symbols";
+@import "app/_utils/card";
+@import "app/_utils/typography";
+@import "app/_utils/overlay";
+@import "app/_utils/comma_list";
+@import "app/_utils/forms";
+//@import "app/_utils/touch";
+//@import "app/_utils/animations";
+
+/***********************************************************
+ IMPORT APP
+***********************************************************/
+@import 'app/_partials/nav/navbar';
+@import 'app/_partials/nav/navbar_mobile';
+@import 'app/_partials/nav/navbar_auth';
+@import 'app/_partials/nav/subnavbar';
+@import 'app/_partials/nav/navbar_search';
+@import 'app/_partials/alerts/alert_legal';
+@import 'app/_partials/gallery/gallery';
+@import 'app/_partials/modals/modal';
+@import "app/filters/filters";
+
+@import "app/adventure/adventure_create";
+@import "app/adventure/adventure_open";
+@import "app/adventure/adventures";
+@import "app/adventure/adventure_block";
+@import "app/adventure/adventure_calendar";
+
+@import "app/review/review_create";
+@import "app/review/review_open";
+@import "app/review/reviews";
+@import "app/review/follow";
+@import "app/review/review_block";
+
+@import "app/people/people";
+
+@import "app/list/list";
+@import "app/search/search";
+
+@import "app/profile/profile";
+@import "app/profile/edit_profile";
+
+@import "app/auth/auth";
+
+@import "app/socials";
+
+@import "app/footer";

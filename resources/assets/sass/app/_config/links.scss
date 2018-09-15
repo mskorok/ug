@@ -1,0 +1,8 @@
+
+a {
+  color: $app-color-green;
+
+  &:hover {
+    color: $app-color-green-darkest;
+  }
+}

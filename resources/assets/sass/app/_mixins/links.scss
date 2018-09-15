@@ -1,0 +1,15 @@
+
+@mixin app-link($color, $hover-color, $hover-bg-color:null, $display:null) {
+  color: $color;
+  text-decoration: none;
+  @if ($display != null) {
+    display: $display;
+  }
+
+  &:hover {
+    color: $hover-color;
+    @if ($hover-bg-color != null) {
+      background-color: $hover-bg-color;
+    }
+  }
+}

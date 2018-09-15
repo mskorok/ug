@@ -1,0 +1,38 @@
+
+.app-soc-btn {
+  padding: 0 !important;
+  width: 100%;
+
+  & > svg {
+    fill: currentColor;
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+  & > span {
+    display: inline-block;
+    padding: $btn-padding-y 0.5rem;
+    vertical-align: middle;
+    line-height: normal;
+  }
+}
+
+.app-soc-btn-facebook {
+  background-color: #3b5998;
+  color: #FFF;
+
+  &:hover {
+    background-color: #2b4988;
+  }
+}
+
+.app-soc-btn-google {
+  background-color: #dd4b39;
+  color: #FFF;
+
+  &:hover {
+    background-color: #cd3b29;
+  }
+}

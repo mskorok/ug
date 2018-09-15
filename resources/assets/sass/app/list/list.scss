@@ -1,0 +1,48 @@
+
+.app-list-item-faded {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  background-color: #a4f7e1;
+  color: #84ab9e;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: right;
+
+  &:after {
+    padding-left: 0.4rem;
+    content: " ＋";
+    color: #84ab9e;
+  }
+
+  &:hover {
+    background-color: rgba(243, 255, 251, 0.87);
+    box-shadow: 1px 2px 4px 0px rgba(2, 2, 2, 0.06), 0px 1px 2px 0px rgba(2, 2, 2, 0.15);
+    color: #649082;
+    cursor: pointer;
+  }
+}
+
+.app-list-item-faded.selected {
+  //background-color: $input-focus-bg-color;
+  box-shadow: 1px 2px 4px 0px rgba(2, 2, 2, 0.06), 0px 1px 2px 0px rgba(2, 2, 2, 0.15);
+  //color: $input-color;
+  color: #858a61;
+  background-color: #ecf2bb;
+
+  &:after {
+    padding-left: 0.4rem;
+    content: " ✕";
+    color: #84ab9e;
+  }
+
+  &:hover {
+    color: #747e30;
+    background-color: #F5FCB5;
+  }
+}
+
+.app-list-item-faded > .interest-text {
+  display: inline-block;
+}

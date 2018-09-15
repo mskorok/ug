@@ -1,0 +1,30 @@
+
+.bg-inverse .nav-item:hover,
+.bg-inverse .nav-item.active {
+  background-color: #555;
+}
+
+.nav-item:hover .navbar-dark .navbar-nav .nav-link {
+  color: hsla(0,0%,100%,.75);
+}
+
+/*.navbar:after {
+  content: none;
+}*/
+
+/*.navbar-nav {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+
+.navbar-nav .nav-item {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}*/
+
+/*.navbar-nav .nav-item button {
+  height: 100%;
+}*/

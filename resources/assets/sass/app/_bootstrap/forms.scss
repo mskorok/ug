@@ -1,0 +1,32 @@
+
+.has-danger {
+  position: relative;
+}
+
+.has-danger .text-help {
+  position: absolute;
+  background: #d50000;
+  display: inline;
+  color: #FFF;
+  padding: 2px 6px;
+  float: right;
+  bottom: -14px;
+  right: -14px;
+  font-size: 0.7rem;
+}
+
+.has-danger .text-help:after {
+  bottom: 100%;
+  right: 25px;
+  //border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(213, 0, 0, 0);
+  border-bottom-color: #d50000;
+  border-width: 8px;
+  margin-left: -8px;
+}
+

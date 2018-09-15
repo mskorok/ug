@@ -1,0 +1,126 @@
+.app-new-activities {
+  background-color: $app-color-grey-lightest;
+  @include app-section();
+  overflow: hidden;
+}
+
+
+.app-new-activities-link-grey .app-new-activities-link-grey:visited, .app-new-activities-link-grey:focus {
+  text-decoration: none;
+  color: $app-color-grey;
+}
+
+.app-new-activities-photo {
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.app-new-activities-top-title {
+  font-size: 1.333rem;
+  font-weight: $app-promo-title-weight;
+}
+
+.app-new-activities-top-step {
+  font-size: 1.333rem;
+  font-weight: $app-promo-title-weight;
+  text-align: right;
+}
+
+.app-new-activities-form-radio input {
+  position: relative;
+  right: .8rem;
+  top: .2rem;
+}
+
+.app-new-activities-form label {
+  text-align: right;
+}
+
+.app-new-activities-form-search-icon {
+  fill: $app-color-grey;
+  height: 1.5rem;
+  width: 1.5rem;
+  vertical-align: bottom;
+  margin-right: 1rem;
+}
+
+.app-new-activities-form-menu {
+  vertical-align: middle;
+  background-color: $app-color-green-front;
+}
+
+.app-new-activities-form-menu .active {
+  border-bottom: 2px solid $app-color-amber;
+}
+
+.app-new-activities-hidden-upload {
+  width: 8.5rem;
+
+}
+
+.app-new-activities-hide-input {
+  display: inline-block;
+  //z-index: 3000;
+  position:relative;
+  right: 145px;
+  width: 10rem;
+  margin-top: 0.5rem;
+}
+
+.app-new-activities-form-icon {
+  fill: $app-color-green-light;
+  position: absolute;
+  top: $input-padding-y - .45rem;
+  right: $input-padding-y + .85rem;
+  height: 2rem;
+  width: 1.5rem;
+}
+
+.app-new-activity-select-arrow::after {
+  content: "";
+  border-top: 0.3em solid $app-color-grey-dark;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  top: 45%;
+  right: 30px;
+}
+
+.app-new-activities-form-preview img {
+  margin-bottom: 1rem;
+  width: 50%;
+}
+
+.app-activity-p-l-3 {
+  padding-left: 3rem !important;
+}
+
+.app-activity-h-4 {
+  height: 4rem;
+}
+
+
+@include media-breakpoint-down(md) {
+  .app-new-activities-radio-padding {
+    padding-left: 2rem !important;
+  }
+
+  .app-new-activities-form label {
+    text-align: left;
+  }
+
+}
+
+@include media-breakpoint-down(xsm) {
+  .app-new-activities {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .app-new-activities-hide-input {
+    right: 0;
+    top: -1.8rem;
+    width: 100%;
+  }
+
+}

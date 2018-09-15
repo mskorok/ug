@@ -1,0 +1,57 @@
+
+.app-alert-legal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  z-index: 999999;
+  background-color: #FAA;
+  color: #333;
+  text-align: center;
+
+  & a {
+    color: #B96B6B;
+
+    &:hover {
+      color: #8d3939;
+    }
+  }
+
+}
+
+.app-alert-legal-text {
+  display: inline-block;
+}
+
+.app-alert-legal-close {
+  display: inline-block;
+  float: right;
+  color: #B96B6B;
+  margin-left: 2rem;
+
+  &:hover {
+    color: #8d3939;
+
+    & > .app-s-close {
+      color: #8d3939;
+    }
+  }
+
+  & .app-s-close {
+    margin-left: 0.5rem;
+    color: #B96B6B;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .app-alert-legal-text {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .app-alert-legal-close {
+    display: block;
+  }
+}

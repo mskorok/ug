@@ -1,0 +1,15 @@
+
+.app-reviews {
+  @include app-section;  
+
+  &-title {
+    @include app-heading();
+    text-align: left;
+    margin-bottom: 1rem;
+    color: $app-color-grey;
+  }
+}
+
+.app-reviews-load-section {
+  margin-top: 1.5rem;
+}

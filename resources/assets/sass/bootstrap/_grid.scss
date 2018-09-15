@@ -1,0 +1,16 @@
+
+// Additional .form-row class to be used with .row class
+// when multiple inputs required to be in one row for horizontal form (one input/row without .row)
+// For example day/month/year
+.form-row [class^="col-"] {
+  padding-right: $grid-gutter-width / 4;
+  padding-left: $grid-gutter-width / 4;
+}
+
+.form-row > [class^="col-"]:last-of-type {
+  padding-right: $grid-gutter-width / 2;
+}
+
+.form-row > [class^="col-"]:first-of-type {
+  padding-left: $grid-gutter-width / 2;
+}

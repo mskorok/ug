@@ -1,0 +1,31 @@
+
+// remove padding if col-* used in .form-group
+// TODO: DEPRECATED - .row SHOULD BE USED WITH FORM-GROUP
+/*.form-group div[class^="col"]:first-child {
+  padding-left: 0;
+}
+.form-group div[class^="col"]:last-child {
+  padding-right: 0;
+}*/
+
+select.form-control[placeholder] option:first-child {
+  color: $input-color-placeholder;
+}
+
+select.form-control[placeholder] option:not(first-child) {
+  color: $input-color;
+}
+
+.placeholder {
+  color: $input-color-placeholder;
+}
+
+.form-group-select-arrow::after {
+  content: "";
+  border-top: 0.3em solid #999;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  top: 35%;
+  right: 20px;
+}

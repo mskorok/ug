@@ -1,0 +1,15 @@
+
+.app-join-community {
+  @include app-promo-section();
+  background: url(#{$img_path}/app/join_community/join_community.png), $app-gradient-green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  &-title {
+    @include app-promo-title();
+    color: #FFF;
+    margin-bottom: 2.5rem;
+  }
+}

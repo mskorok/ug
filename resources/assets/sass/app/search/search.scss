@@ -1,0 +1,22 @@
+
+.app-search-autocomplete {
+  position: relative;
+  height: 4rem;
+}
+
+
+.app-search-input {
+  position: absolute;
+}
+
+.app-search-add-item {
+  position: absolute;
+  right: 0;
+  height: 3rem;
+  padding: 0 1rem;
+
+  background-color: transparent;
+  color: red;
+  font-weight: 700;
+  border: none;
+}

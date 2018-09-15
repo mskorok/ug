@@ -1,0 +1,22 @@
+
+.app-dropdown-toggle-remove:after {
+  border: 0;
+  content: "";
+}
+
+.app-dropdown-item-checkbox {
+  padding: 0;
+
+  & label {
+    padding: 12px 20px;
+    margin-bottom: 0;
+  }
+}
+
+.app-dropdown .dropdown-item:not(:last-child):after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #EEE;
+  margin-top: 11px;
+  margin-bottom: -11px;
+}

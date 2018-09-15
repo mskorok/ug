@@ -1,0 +1,66 @@
+Methods of Interest API:
+
+    interests - deprecated -  currently  used for auto complete data acquisition, in the future  will be deleted
+                arguments - without arguments
+                return \Illuminate\Database\Eloquent\Collection|static[]
+
+    index  - Returns a collection of interests in JSend/key-value format, according to specified URL params
+                arguments - URL params according to RestController methods
+                return \Illuminate\Database\Eloquent\Collection| error message
+
+    interest - Return Interest model in json format  by model id
+                arguments - integer model id
+                return  App\Models\Interests\Interest
+
+    postAddInterest - create new Interest model
+                arguments - interest name
+                return success or error message
+
+
+    editInterest - edit Interest model by changing the model name, the arguments are the old and new name
+                arguments - string old name,   string new name
+                return success or error message
+
+    addToUser  - add Interest model to the collection of Interest models belonging to the User model
+                arguments - Interest model  name,   User model id
+                return success or error message
+
+
+    addToAdventure - add Interest model to the collection of Interest models belonging to the Adventure model
+                arguments - Interest model  name,   Adventure model id
+                return success or error message
+
+
+    addToJournal  - add Interest model to the collection of Interest models belonging to the Review model
+                arguments - Interest model  name,   Review model id
+                return success or error message
+
+
+    removeFromUser - remove Interest model from the collection of Interest models belonging to the User model
+                arguments - Interest model  name,   User model id
+                return success or error message
+
+
+    removeFromAdventure - remove Interest model from the collection of Interest models belonging to the Adventure model
+                arguments - Interest model  name,   Adventure model id
+                return success or error message
+
+    removeFromJournal - remove Interest model from the collection of Interest models belonging to the Review model
+                arguments - Interest model  name,   Review model id
+                return success or error message
+
+    deleteInterest  -  completely removes the model Interest
+                arguments - interest name
+                return success or error message
+
+    userInterests  -  returns a collection of Interest models belonging to given User model
+                arguments - integer User model id, integer page (defaul null)
+                return s\Illuminate\Database\Eloquent\Collection
+
+    adventureInterests -  returns a collection of Interest models belonging to given Adventure model
+                arguments - integer Adventure model id, integer page (defaul null)
+                return s\Illuminate\Database\Eloquent\Collection
+
+    journalInterests  -  returns a collection of Interest models belonging to given Review model
+                arguments - integer Review model id, integer page (defaul null)
+                return s\Illuminate\Database\Eloquent\Collection

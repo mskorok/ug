@@ -1,0 +1,40 @@
+
+.app-box-shadow-1 { //large, for buttons
+  box-shadow: $app-shadow-1;
+
+  &:focus {
+    box-shadow: $app-shadow-1;
+  }
+}
+
+.app-box-shadow-2 { // smaller, for inputs
+  box-shadow: $app-shadow-2;
+
+  &:focus {
+    box-shadow: $app-shadow-2;
+  }
+}
+
+.app-box-shadow-3 {
+  box-shadow: $app-shadow-3;
+
+  &:focus {
+    box-shadow: $app-shadow-3;
+  }
+}
+
+.app-box-shadow-4 {
+  box-shadow: $app-shadow-4;
+
+  &:focus {
+    box-shadow: $app-shadow-4;
+  }
+}
+
+.app-text-shadow {
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.app-shadow-none {
+  box-shadow: none;
+}

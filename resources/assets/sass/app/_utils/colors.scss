@@ -1,0 +1,64 @@
+
+/*
+ * TEXT COLORS
+ */
+
+// green
+.app-color-green {
+  color: $app-color-green;
+}
+
+.app-color-green-dark {
+  color: $app-color-green-dark;
+}
+
+.app-color-green-light {
+  color: $app-color-green-light;
+}
+
+// grey
+.app-color-grey {
+  color: $app-color-grey;
+}
+
+.app-color-grey-bright {
+  color: $app-color-grey-bright;
+}
+
+.app-color-grey-light {
+  color: $app-color-grey-light;
+}
+
+.app-color-grey-lightest {
+  color: $app-color-grey-lightest;
+}
+
+.app-color-grey-dark {
+  color: $app-color-grey-dark;
+}
+
+.app-color-green-front {
+  color: $app-color-green-front;
+}
+
+/*
+ * BG COLORS
+ */
+
+// grey
+.app-bg-color-grey-light {
+  background-color: $app-color-grey-lightest;
+}
+
+/*
+ * LINK CONTAINER COLORS
+ */
+.app-link-container-grey {
+  & a {
+    color: $app-color-grey;
+
+    &:hover {
+      color: $app-color-grey-dark;
+    }
+  }
+}

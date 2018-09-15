@@ -1,0 +1,16 @@
+php_errors.log
+/public/user_files
+.idea
+/vendor
+/node_modules
+/resoures/assets/compiled
+/resources/assets/vendor
+Homestead.yaml
+Homestead.json
+.env
+.vagrant
+build_number.txt
+_ide_helper.php
+/public/deploy
+npm-debug.log
+/nbproject

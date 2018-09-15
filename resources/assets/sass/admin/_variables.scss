@@ -1,0 +1,199 @@
+
+$img-path: '/img';
+
+/* Contents:
+  1. App Navbar
+  2. App Section
+  3. App Colors
+  4. App Gradients
+  5. App Headings
+    5.1. Promo title
+    5.2. Title
+    5.3. Subtitle
+    5.4. Heading
+    5.5. Subheading
+  6. App Categories
+  7. App buttons, forms and inputs
+  8. App utils
+*/
+
+
+/*************************************************************************************
+ * 1. APP NAVBAR
+ */
+
+$app-navbar-mobile-width: 220px;
+$app-navbar-mobile-padding-y: 0.75rem;
+$app-navbar-mobile-padding-x: 0.5rem;
+
+/*************************************************************************************
+ * 2. APP SECTION
+ */
+
+// main section padding for different breakpoints up
+$app-section-padding: (
+  xs: (1rem, 0.5rem),
+  sm: (1.1rem, 0.75rem),
+  md: (1.3rem, 1.5rem),
+  lg: (1.7rem, 3.5rem),
+  xl: (2.2rem, 5rem),
+  xxl: (2.8rem, 7rem),
+);
+
+// promo section padding for different breakpoints up
+$app-promo-section-padding: (
+        xs: (2rem, 0.5rem),
+        sm: (3rem, 0.75rem),
+        md: (4rem, 1.5rem),
+        lg: (5rem, 3.5rem),
+        xl: (6rem, 5rem),
+        xxl: (7rem, 7rem),
+);
+
+// main column middle size for different breakpoints up
+$app-column-middle-sizes: (
+  xs: 12/12,
+  sm: 12/12,
+  md: 10/12,
+  lg: 8/12,
+  xl: 6/12,
+  xxl: 4/12,
+);
+
+
+/*************************************************************************************
+ * 3. APP COLORS
+ */
+$app-color-default:  #373a3c;
+
+$app-color-green: #00b994;
+$app-color-green-dark: #009974;
+$app-color-green-light: #00CCAA;
+$app-color-green-lightest: #00FFDD;
+
+// app-color-x-front color for content if background color set to app-color-x
+$app-color-green-front: #FFF;
+$app-color-green-front-dark: #b3f8e4;
+
+/*$app-link-green: #b3f8e4;
+$app-link-green-hover: #93e4af;
+$app-link-green-decoration: none;*/
+
+$app-color-grey:       #999;
+$app-color-grey-dark:  #565a5c;
+$app-color-grey-light: #F5F5F5;
+
+$app-color-amber:      #ffad00;
+
+/*************************************************************************************
+ * 4. APP GRADIENTS, FRONT TEXT AND LINKS
+ */
+$app-gradient-green: linear-gradient(120deg, rgb(0, 213, 136) 18%, rgb(0, 179, 163) 82%);
+$app-gradient-green-text-color: #FFF;
+$app-gradient-green-link-color: #b3f8e4;
+$app-gradient-green-link-hover-color: #93e4af;
+$app-gradient-green-link-hover-decoration: none;
+
+
+/*************************************************************************************
+ * 5. APP HEADINGS
+ */
+
+// 5.1. promo title
+$app-promo-title-weight: 700;
+$app-promo-title-align: center;
+$app-promo-title-sizes: ( // different promo title sizes for different breakpoints up
+  xs: 1.75rem,
+  sm: 1.85rem,
+  md: 2.2rem,
+  lg: 2.6rem,
+  xl: 3rem,
+  xxl: 3.4rem,
+);
+
+// 5.2. title
+$app-title-weight: 700;
+$app-title-align: center;
+$app-title-sizes: ( // different title sizes for different breakpoints up
+  xs: 1.3rem,
+  sm: 1.4rem,
+  md: 1.7rem,
+  lg: 2rem,
+  xl: 2.3rem,
+  xxl: 2.6rem,
+);
+
+// 5.3. subtitle
+$app-subtitle-weight: 400;
+$app-subtitle-align: center;
+$app-subtitle-sizes: ( // different subtitle sizes for different breakpoints up
+  xs: 1.15rem,
+  sm: 1.2rem,
+  md: 1.3rem,
+  lg: 1.35rem,
+  xl: 1.45rem,
+  xxl: 1.65rem,
+);
+
+// 5.4. heading
+$app-heading-weight: 700;
+$app-heading-align: center;
+$app-heading-sizes: ( // different heading sizes for different breakpoints up
+  xs: 1.1rem,
+  sm: 1.15rem,
+  md: 1.2rem,
+  lg: 1.35rem,
+  xl: 1.5rem,
+  xxl: 1.75rem,
+);
+
+// 5.5. subheading
+$app-subheading-weight: 400;
+$app-subheading-align: center;
+$app-subheading-sizes: ( // different subheading sizes for different breakpoints up
+  xs: 1rem,
+  sm: 1.1rem,
+  md: 1.15rem,
+  lg: 1.2rem,
+  xl: 1.3rem,
+  xxl: 1.4rem,
+);
+
+/*************************************************************************************
+ * 6. APP CATEGORIES
+ */
+$app-categories: (
+  1: 1_activities,
+  2: 2_extreme,
+  3: 3_games,
+  4: 4_health,
+  5: 5_fun,
+  6: 6_culture,
+  7: 7_family,
+  8: 8_volunteering
+);
+
+/*************************************************************************************
+ * 7. APP BUTTONS, FORMS AND INPUTS
+ */
+$app-btn-lg-sizes: ( // font-size, padding y, padding x
+        xs: (0.75rem, 0.4rem, 0.8rem),
+        sm: (0.9rem, 0.4rem, 0.8rem),
+        md: (1.05rem, 0.6rem, 1.3rem),
+        lg: (1.2rem, 0.75rem, 1.8rem),
+        xl: (1.2rem, 1rem, 2.5rem),
+        xxl: (1.25rem, 1rem, 4rem),
+);
+
+//$app-input-shadow: 1px 3px 6px 0px rgba(2, 2, 2, 0.08), 0px 1px 2px 0px rgba(2, 2, 2, 0.2);
+
+$app-search-width: (
+        xl: 34%,
+        xxl: 40%
+);
+
+/**************************************************************************************
+ * 8. APP UTILS
+ */
+$app-shadow-1: 4px 7px 16px 0 rgba(2,2,2,.1),4px 7px 18px 0 rgba(2,2,2,.08),0 1px 2px 0 rgba(2,2,2,.2);
+$app-shadow-2: 1px 3px 6px 0 rgba(2,2,2,.08),0 1px 2px 0 rgba(2,2,2,.2);

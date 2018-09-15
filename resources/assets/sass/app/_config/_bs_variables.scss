@@ -1,0 +1,115 @@
+// App BS4/copy variables
+// to view available variables view
+// https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+
+// core settings
+$enable-gradients: true;
+$enable-transitions: true;
+$enable-shadows: true;
+//$enable-flex: true;
+$bootstrap-sass-asset-helper: false !default;
+
+// breakpoint settings
+$grid-breakpoints: (
+        xs: 0,
+        xsm: 370px,
+        sm: 544px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1600px,
+        xxxl: 2100px
+);
+$container-max-widths: (
+        xsm: 370px,
+        sm: 576px,
+        md: 720px,
+        lg: 940px,
+        xl: 1140px,
+        xxl: 1520px,
+        //xxxl: 2000px
+);
+
+
+// font
+$font-size-root: 17px;
+$font-family-sans-serif: "Roboto";
+
+// navbar
+$navbar-border-radius: 0;
+$navbar-padding-y: 0;
+
+$navbar-light-color:                rgba(0,0,0,.5) !default;
+$navbar-light-hover-color:          rgba(0,0,0,.7) !default;
+$navbar-light-active-color:         rgba(0,0,0,.7) !default;
+$navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
+
+// navbar copy
+$navbar-brand-margin-y: 0.74rem;
+
+$navbar-item-padding-y: 0;
+$navbar-item-padding-x: 0;
+$navbar-item-margin-y: 0;
+$navbar-item-margin-x: 0;
+
+//$navbar-link-padding-y: 0.75rem;
+$navbar-link-padding-y: 0.9rem;
+//$navbar-link-padding-x: 1rem;
+$navbar-link-padding-x: 0.9rem;
+
+//$navbar-brand-padding-top: 0.5rem;
+//$navbar-brand-padding-bottom: 0.5rem;
+$navbar-brand-padding-top: 0.6rem;
+$navbar-brand-padding-bottom: 0.6rem;
+
+// button
+$btn-padding-x: 4.5rem;
+$btn-padding-y: 0.75rem;
+
+$btn-padding-x-sm:               2rem;
+$btn-padding-y-sm:               0.5rem;
+
+$btn-padding-x-lg:               4rem;
+$btn-padding-y-lg:               1rem;
+
+$btn-border-radius: 2rem;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+
+$btn-primary-bg: #fc1800;
+$btn-primary-color: #FFF !important;
+//$btn-primary-border: transparent;
+$btn-primary-border: rgba(2, 2, 2, 0.1);
+
+$btn-secondary-bg: #00665D;
+$btn-secondary-color: #FFF !important;
+$btn-secondary-border: transparent;
+
+//form
+$input-padding-x:                .85rem;
+$input-padding-y:                .85rem;
+$input-line-height:              1.25;
+
+$input-bg:                       #fff;
+//$input-bg-disabled:              $gray-lighter;
+
+//$input-color:                    $gray;
+$input-border-color:             rgba(0,0,0,.15);
+//$input-btn-border-width:         $border-width;
+$input-box-shadow:               none;
+
+$input-border-radius:            4px;
+
+$input-border-focus:             rgba(0, 30, 60, 0.4);
+$input-box-shadow-focus:         none;
+
+$input-color-placeholder:        #BBB;
+
+// components (dropdowns, pills, etc)
+
+$component-active-bg: $app-color-green;
+
+// dropdowns
+$dropdown-link-color:            $app-color-grey;
+$dropdown-link-hover-color:      $app-color-grey-dark;
+$dropdown-link-hover-bg:         #FAFAFA;

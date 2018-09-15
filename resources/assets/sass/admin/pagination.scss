@@ -1,0 +1,19 @@
+
+.page-link {
+  margin-left: 0.5rem;
+  border-radius: 5rem;
+}
+
+.page-link:hover {
+  text-decoration: none;
+}
+
+.page-item:first-child .page-link {
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 5rem;
+}
+
+.page-item:last-child .page-link {
+  border-bottom-right-radius: 5rem;
+  border-top-right-radius: 5rem;
+}

@@ -1,0 +1,11 @@
+
+.alert {
+  margin-bottom: 2rem;
+}
+
+.alert-success a {
+  color: #2cbd76;
+  &:hover {
+    color: #33a880;
+  }
+}

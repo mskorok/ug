@@ -1,0 +1,28 @@
+{
+    "name": "urlaubs-gluck",
+    "description": "This Ulaubs Gluck box with CentOS CentOS 7 x86-64",
+    "versions": [
+        {
+            "version": "0.3.0",
+            "providers": [
+                {
+                    "name": "virtualbox",
+                    "url": "http://boxes.kodex.lv/urlaubs-gluck/boxes/urlaubs-gluck-0.3.0.box",
+	        "checksum_type": "sha1",
+                    "checksum": "21e1b957837cd42906b382379b393d85990edb7b"
+                }
+            ]
+        },
+{
+            "version": "0.4.0",
+            "providers": [
+                {
+                    "name": "virtualbox",
+                    "url": "http://boxes.kodex.lv/urlaubs-gluck/boxes/urlaubs-gluck-0.4.0.box",
+	        "checksum_type": "sha1",
+                    "checksum": "8748c98deafdbbd58eca3c44183b49422885446f"
+                }
+            ]
+        }
+    ]
+}

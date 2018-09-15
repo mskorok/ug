@@ -1,0 +1,43 @@
+
+.app-section {
+  @include app-section();
+}
+
+.app-section-x {
+  @include app-section-x();
+}
+
+.app-promo-section {
+  @include app-promo-section();
+}
+
+.app-column-middle {
+  @include app-column-middle();
+}
+
+.app-container {
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;*/
+}
+
+.app-container-1300 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.app-container-1600 {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.app-center-block {
+  margin: 0 auto;
+}
+
+.app-line-height {
+  line-height: 1.5 !important;
+}
+
+

@@ -1,0 +1,75 @@
+
+.app-navbar-mobile {
+  position: fixed;
+  top: 0;
+  left: -$app-navbar-mobile-width;
+  width: $app-navbar-mobile-width;
+  height: 100%;
+  background: $app-color-green-dark;
+  color: $app-color-green-front;
+  overflow: hidden;
+  transition: left 0.3s ease;
+  z-index: 5000;
+  padding-right: -20px;
+
+  &.active {
+    left: 0;
+    box-shadow: 0 0 40px 30px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.app-navbar-mobile-inner {
+  height: 100%;
+  overflow-y: scroll;
+  margin-right: -30px;
+  padding-right: 30px;
+}
+
+.app-navbar-mobile-divider {
+  width: $app-navbar-mobile-width;
+  border-bottom: 1px solid $app-color-green;
+}
+
+.app-navbar-mobile-section {
+  width: $app-navbar-mobile-width;
+  padding: $app-navbar-mobile-padding-y $app-navbar-mobile-padding-x;
+}
+
+.app-navbar-mobile-buttons a:first-child {
+  margin-bottom: 0.75rem;
+}
+
+.app-navbar-mobile-section-links {
+  padding-left: 0;
+  padding-right: 0;
+
+  & a {
+    padding: 0.25rem $app-navbar-mobile-padding-x;
+  }
+}
+
+.app-navbar-mobile-section-title {
+  background-color: $app-color-green-darkest;
+}
+
+.app-navbar-mobile-logo {
+  fill: #FFF;
+  width: 200px;
+  height: 30px;
+}
+
+.app-navbar-mobile-user-block {
+
+  & img {
+    width: 40px;
+    height: 40px;
+  }
+
+  & span {
+    padding-left: 10px;
+  }
+
+  & a {
+    padding-left: 10px;
+  }
+}

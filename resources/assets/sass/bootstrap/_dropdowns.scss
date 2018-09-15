@@ -1,0 +1,39 @@
+
+.dropdown-block {
+
+  & .dropdown-toggle::after {
+    margin-right: 0;
+    float: right;
+    margin-top: 0.5rem;
+  }
+
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+
+.dropdown-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown-item-title {
+  padding: 8px $dropdown-item-padding-x 0 $dropdown-item-padding-x;
+}
+
+.dropdown-active {
+  color: $dropdown-link-hover-color !important;
+}
+
+.dropdown-no-triangle::after {
+  content: none;
+}
+
+.dropdown-menu-down {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 5px;
+  border-top: none;
+}

@@ -1,0 +1,6 @@
+
+.app-filters {
+  border-bottom: 1px solid #ddd;
+  background-color: #FCFCFC;
+  z-index: 100; // set same stacking content for dropdowns and other elements inside when using css transform()
+}

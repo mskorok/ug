@@ -1,0 +1,16 @@
+
+.btn-primary {
+  box-shadow: $app-shadow-1;
+  font-weight: 700;
+}
+
+.btn-lg {
+  @each $key, $list in $app-btn-lg-sizes {
+
+    @include media-breakpoint-up($key) {
+      font-size: nth($list, 1);
+      padding: nth($list, 2) nth($list, 3);
+    }
+
+  }
+}

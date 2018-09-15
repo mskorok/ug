@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'promo_title' => 'Gemeinsamer Urlaub ist schöner!',
+    'how_it_works' => 'Wie funktioniert\'s?',
+    'how_it_works_step1_title' => 'Discover holiday activities',
+    'how_it_works_step1_desc' => 'Search for your interests and discover holiday activities',
+    'how_it_works_step2_title' => 'Find friends for your activities',
+    'how_it_works_step2_desc' => 'Connect with other people for sharing the experience',
+    'how_it_works_step3_title' => 'Explore!',
+    'how_it_works_step3_desc' => 'Have fun - don\'t forget to write a review and tell others',
+    'promo_desc' => 'Finde Reisepartner für deinen Traumurlaub, entdeckt packende Urlaubsaktivitäten und plant zusammen das perfekte Abenteuer!',
+    'categories_title' => 'Finde dein Urlaubsglück!',
+    'categories_desc' => 'Wie möchtest Du deinen Urlaub verbringen?',
+    'join_community_title' => 'Trete jetzt Ürlaubsglück bei! Es ist kostenlos.',
+    'join_community_btn' => 'Jetzt registrieren',
+    'activities_title' => 'Zuletzt erstellte Aktivitäten',
+    'activities_desc' => 'Bist Du bereit für einen unvergesslichen Urlaub?',
+    'activities_browse_all' => 'Mehr Urlaubsaktivitäten',
+    'review_title' => 'Inspirierende Urlaubsberichte',
+    'review_desc' => 'Finde Urlaubsideen von gleichgesinnten Reisenden!',
+    'review_browse_all' => 'Mehr Urlaubsberichte',
+    'start_adventure_title' => 'Starte Deine eigene Urlaubsaktivität jetzt!',
+    'start_adventure_placeholder' => 'Was möchtest Du unternehmen?',
+    'start_adventure_btn' => 'Erstelle eine Aktivität',
+];

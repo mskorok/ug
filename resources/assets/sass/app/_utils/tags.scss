@@ -1,0 +1,21 @@
+
+.app-tag {
+  color: $app-color-grey-dark !important;
+  background-color: $app-color-mint;
+  border: 1px solid $app-color-mint-dark;
+  border-radius: 8px;
+  padding: 5px 12px;
+  display: inline-block;
+  margin: 0.25rem;
+
+  &:hover {
+    cursor: pointer;
+    color: lighten($app-color-grey-dark, 8%);
+    background-color: lighten($app-color-mint, 1%);
+    border-color: darken($app-color-mint-dark, 12%);
+  }
+
+  & span {
+    margin-left: 0.5rem;
+  }
+}

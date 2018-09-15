@@ -1,0 +1,145 @@
+
+@mixin app-section {
+  margin-left: auto;
+  margin-right: auto;
+
+  @each $key, $list in $app-section-padding {
+
+    @include media-breakpoint-up($key) {
+      padding: nth($list, 1) nth($list, 2);
+    }
+
+  }
+
+};
+
+@mixin app-section-a {
+  margin-left: auto;
+  margin-right: auto;
+
+  @each $key, $list in $app-section-padding {
+
+    @include media-breakpoint-up($key) {
+      padding: nth($list, 2) nth($list, 2);
+    }
+
+  }
+
+};
+
+@mixin app-section-x($y:0) {
+  margin-left: auto;
+  margin-right: auto;
+
+  @each $key, $list in $app-section-padding {
+
+    @include media-breakpoint-up($key) {
+      padding: $y nth($list, 2);
+    }
+
+  }
+
+};
+
+@mixin app-promo-section {
+  margin-left: auto;
+  margin-right: auto;
+
+  @each $key, $list in $app-promo-section-padding {
+
+    @include media-breakpoint-up($key) {
+      padding: nth($list, 1) nth($list, 2);
+    }
+
+  }
+}
+
+@mixin app-item-spacer {
+  @each $key, $list in $app-item-spacer {
+
+    @include media-breakpoint-up($key) {
+      padding: nth($list, 1) nth($list, 2) !important;
+    }
+
+  }
+}
+
+@mixin app-column-middle {
+
+  @each $key, $col-size in $app-column-middle-sizes {
+
+    @include media-breakpoint-up($key) {
+      width: $col-size * 100 * 1%;
+      //margin-left: (100 - $col-size * 100) / 2 * 1%;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+
+  }
+
+};
+
+@mixin app-promo-title {
+  font-weight: $app-promo-title-weight;
+  text-align: $app-promo-title-align;
+
+  @each $key, $size in $app-promo-title-sizes {
+
+    @include media-breakpoint-up($key) {
+      font-size: $size;
+    }
+
+  }
+}
+
+@mixin app-title {
+  font-weight: $app-title-weight;
+  text-align: $app-title-align;
+
+  @each $key, $size in $app-title-sizes {
+
+    @include media-breakpoint-up($key) {
+      font-size: $size;
+    }
+
+  }
+}
+
+@mixin app-subtitle {
+  font-weight: $app-subtitle-weight;
+  text-align: $app-subtitle-align;
+
+  @each $key, $size in $app-subtitle-sizes {
+
+    @include media-breakpoint-up($key) {
+      font-size: $size;
+    }
+
+  }
+}
+
+@mixin app-heading {
+  font-weight: $app-heading-weight;
+  text-align: $app-heading-align;
+
+  @each $key, $size in $app-heading-sizes {
+
+    @include media-breakpoint-up($key) {
+      font-size: $size;
+    }
+
+  }
+}
+
+@mixin app-subheading {
+  font-weight: $app-subheading-weight;
+  text-align: $app-subheading-align;
+
+  @each $key, $size in $app-subheading-sizes {
+
+    @include media-breakpoint-up($key) {
+      font-size: $size;
+    }
+
+  }
+}

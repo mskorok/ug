@@ -1,0 +1,26 @@
+
+.app-card {
+  box-shadow: $app-shadow-4;
+  background-color: $app-color-green-front;
+  border-radius: 2px;
+}
+
+.app-card-b-shadow {
+  box-shadow: 0 4px 8px -8px rgba(0, 0, 0, 0.8);
+
+}
+
+.app-card-b-divider {
+  border-bottom: thin solid $app-color-grey-light;
+}
+
+.app-card-t-divider {
+  border-top: thin solid $app-color-grey-light;
+}
+
+.app-p-card {
+  padding: 1.5rem;
+  @include media-breakpoint-down(md) {
+    padding: .75rem;
+  }
+}

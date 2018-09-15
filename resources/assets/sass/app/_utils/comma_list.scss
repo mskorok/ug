@@ -1,0 +1,17 @@
+
+.app-comma-list > span:not(:empty) ~ span:not(:empty):before {
+  content: ", ";
+  //margin-left: -.2em;
+}
+
+.app-comma-list-dash > span:not(:empty) ~ span:not(:empty):before {
+  content: " — ";
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.app-comma-list-bullet > span:not(:empty) ~ span:not(:empty):before {
+  content: " • ";
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}

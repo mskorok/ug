@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "gulp-google-fonts-base64-css": "^1.0.4",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svg-symbols": "^1.0.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
+    "laravel-elixir-svg-symbols": "^1.0.1",
+    "rollup-plugin-babel": "^2.3.9",
+    "rollup-plugin-node-resolve": "^1.5.0"
+  },
+  "dependencies": {
+    "bootstrap": "twbs/bootstrap#v4-dev",
+    "bootstrap.native": "^1.0.0",
+    "bunnyjs": "^0.9.16",
+    "chokidar": "^1.4.2",
+    "croppie": "^2.1.0",
+    "font-awesome": "^4.5.0",
+    "gulp": "^3.9.0",
+    "gulp-rollup": "^1.7.0",
+    "gulp-uglify": "^1.5.1",
+    "laravel-elixir": "^4.2.0",
+    "rollup-plugin-uglify": "^0.1.0"
+  }
+}

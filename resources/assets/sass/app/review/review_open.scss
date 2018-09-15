@@ -1,0 +1,227 @@
+.app-open-review {
+  background-color: $app-color-grey-lightest;
+  @include app-section();
+}
+
+
+a.app-open-review-link, a.app-open-review-link:hover, a.app-open-review-link:visited {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+a.app-open-review-link-post, a.app-open-review-link-post:hover, a.app-open-review-link-post:visited {
+  color: $app-color-grey;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.app-open-review-textarea {
+  border: none transparent;
+  overflow: auto;
+  outline: none;
+  resize: none
+}
+
+.app-open-review-block-image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  margin: 0;
+  box-shadow: inset 0 -15rem 20rem -14rem $app-color-grey-dark, inset 0 15rem 20rem -14rem $app-color-grey-dark;
+}
+
+.app-open-review-user-avatar {
+  border-radius: 50%;
+  width: 2.7rem;
+  height: 2.7rem;
+  border: 1px solid $app-color-grey-bright;
+}
+
+.app-open-review-user-name {
+  margin-left: 1.5rem;
+  color: $app-color-green;
+  &:hover {
+    color: $app-color-green-front;
+  }
+}
+
+.app-open-review-share {
+  top: 2rem;
+  right: 2rem;
+}
+
+.app-open-review-share > a > svg {
+  width: 1rem;
+  height: 1.3rem;
+  fill-opacity: 1;
+  fill:$app-color-grey-light;
+  &:hover {
+    fill: $app-color-green-front;
+  }
+
+}
+
+.app-open-review-block-title {
+  margin: 2rem 0 .75rem 1rem;
+}
+
+.app-open-review-friends {
+  height: 15rem;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.app-open-review-white-space {
+  height: 4.5rem;
+}
+
+.app-open-review-scroll {
+  height: 18rem;
+  overflow-y: scroll;
+  margin-right: -2em;
+  padding-right: 1em;
+}
+
+.app-open-review-block-invite-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  box-shadow: inset 0 -80px 80px -70px #FFF;
+  margin-top: 1rem;
+}
+
+.app-open-review-going-image {
+  width: 2rem;
+  margin: .3rem;
+}
+
+svg.app-open-review-icon {
+  width: 2rem;
+  height: 2rem;
+  fill-opacity: 1;
+  fill: $app-color-green-front;
+}
+
+svg.app-open-review-icon:hover {
+  fill: $app-color-green;
+}
+
+.app-open-review-btn-outline {
+  outline: $app-color-green-front 0;
+
+}
+
+.app-open-review-btn-outline > svg.app-icon-gray {
+  fill: $app-color-grey
+}
+
+.app-open-review-btn-outline:hover > svg {
+  fill: $app-color-green-front;
+}
+
+.app-responses-block > div.app-card-b-divider:last-child {
+  border-bottom: none;
+  box-shadow: none !important;
+}
+
+
+.app-open-review-m-t-quarter {
+  margin-top: .2rem;
+}
+
+.app-open-review-new-post {
+  padding-left: 15px;
+}
+
+.app-open-review-post-count {
+  margin-left: .5rem;
+  margin-right: 1rem;
+  vertical-align: top;
+}
+
+.app-open-review-reply-form {
+  position: relative;
+  top: -.7rem;
+}
+
+.app-open-review-btn-outline {
+  background-color: $app-color-green-front;
+}
+
+
+
+
+@include media-breakpoint-up(lg) {
+
+  a.app-open-review-link, a.app-open-review-link:hover, a.app-open-review-link:visited {
+    color: $app-color-green-front;
+  }
+  .app-open-review-flex {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 28rem;
+  }
+
+  .app-open-review-user {
+    height: 5rem;
+
+  }
+
+  .app-open-review-info {
+    bottom: 2rem;
+    height: 10rem;
+
+  }
+}
+
+@include media-breakpoint-down(md) {
+
+
+  svg.app-open-review-icon {
+    fill: $app-color-grey;
+  }
+
+  svg.app-open-review-icon:hover {
+    fill: $app-color-green;
+  }
+
+  .app-open-review-user-name {
+    color: $app-color-green;
+    &:hover {
+      color: inherit;
+    }
+  }
+  .app-open-review > div:first-child {
+    padding-top: 0;
+  }
+}
+
+
+@include media-breakpoint-down(xsm) {
+
+  .app-open-review-user-name {
+    display: block;
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100% !important;
+  }
+
+  .app-open-review-btn-outline {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .app-open-review-btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+

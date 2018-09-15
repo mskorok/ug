@@ -1,0 +1,17 @@
+
+.app-slide-down {
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0; // if element have border bottom
+  margin-bottom: 0;
+
+  transition: transform 0.6s ease-in;
+  transform: translateY(-100%);
+
+  &.active {
+    transition: transform 0.6s ease-in;
+    transform: translateY(0);
+  }
+}

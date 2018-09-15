@@ -1,0 +1,11 @@
+
+.app-start-adventure {
+  @include app-promo-section();
+
+  &-title {
+    @include app-promo-title();
+    color: #FFF;
+    margin-bottom: 2.5rem;
+  }
+
+}

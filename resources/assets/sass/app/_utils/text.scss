@@ -1,0 +1,66 @@
+
+.app-text {
+  font-size: 1rem;
+}
+
+.app-text-sm {
+  font-size: 0.9rem;
+}
+
+.app-text-xs {
+  font-size: 0.8rem;
+}
+
+.app-text-lg {
+  font-size: 1.1rem;
+}
+
+.app-text-xl {
+  font-size: 1.2rem;
+}
+
+.app-text-xxl {
+  font-size: 1.5rem;
+}
+
+.app-font-size-0 {
+  font-size: 0;
+}
+
+.app-text-lowercase {
+  text-transform: lowercase;
+}
+
+.app-text-uppercase {
+  text-transform: uppercase;
+}
+
+.app-text-capitalize {
+  text-transform: capitalize;
+}
+
+.app-white-space-nowrap {
+  white-space: nowrap;
+
+}
+
+.app-overflow-hidden {
+  overflow: hidden;
+}
+
+.app-text-editor-child-width > div {
+  width:100% !important;
+
+}
+// only for nicEditor
+//.app-text-editor-child-width > div:nth-child(2) {
+//  width:100% !important;
+//  min-height: 7rem;
+//}
+//
+//.app-text-editor-child-width > div:nth-child(2) > div {
+//  width: 98.3% !important;
+//  min-height: 7rem !important;
+//}
+
+

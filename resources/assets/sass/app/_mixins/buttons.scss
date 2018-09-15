@@ -1,0 +1,76 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin app-button-variant($color, $background, $border:null) {
+  $active-background: darken($background, 10%);
+  @if ($border != null) {
+    $active-border: darken($border, 12%);
+  }
+
+
+  color: $color;
+  background-color: $background;
+  @if ($border != null) {
+    border-color: $border;
+  }
+  //@include box-shadow($btn-box-shadow);
+
+  @include hover {
+    color: $color;
+    background-color: $active-background;
+    @if ($border != null) {
+      border-color: $active-border;
+    }
+  }
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: $active-background;
+    @if ($border != null) {
+      border-color: $active-border;
+    }
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $active-background;
+    @if ($border != null) {
+      border-color: $active-border;
+    }
+    // Remove the gradient for the pressed/active state
+    background-image: none;
+    @include box-shadow($btn-active-box-shadow);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+      @if ($border != null) {
+        border-color: darken($border, 25%);
+      }
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    &:focus,
+    &.focus {
+      background-color: $background;
+      @if ($border != null) {
+        border-color: $border;
+      }
+    }
+    @include hover {
+      background-color: $background;
+      @if ($border != null) {
+        border-color: $border;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+
+.app-t-subtitle {
+  color: #BBB;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.app-section-title {
+  @include app-heading();
+  text-align: left;
+  margin-bottom: 1rem;
+  color: $app-color-grey;
+}

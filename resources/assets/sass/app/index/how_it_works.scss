@@ -1,0 +1,76 @@
+
+.app-how-it-works {
+  //@include app-section();
+  //background: $app-gradient-green;
+
+  position: relative;
+  // fixed top position
+  /*position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99999; // > navbar*/
+
+  // for animation, hidden by default
+  // there is also padding: 0 reset by custom class,
+  // which is removed via JS also to get back default section padding
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease 0s;
+
+  /*&-step1 {
+    background-image: url(#{$img-path}/app/how_it_works/1.png);
+    width: 166px;
+    height: 220px;
+    display: inline-block;
+    margin: 2rem 0;
+  }
+
+  &-step2 {
+    background-image: url(#{$img-path}/app/how_it_works/2.png);
+    width: 215px;
+    height: 220px;
+    display: inline-block;
+    margin: 2rem 0;
+  }
+
+  &-step3 {
+    background-image: url(#{$img-path}/app/how_it_works/3.png);
+    width: 172px;
+    height: 220px;
+    display: inline-block;
+    margin: 2rem 0;
+  }*/
+}
+
+.app-how-it-works-hidden {
+  // in combination with .app-how-it-works animation/visibility styles
+  padding: 0;
+}
+
+.app-how-it-works-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem 2.2rem;
+  float: right;
+  font-size: 1.5rem;
+}
+
+.app-how-it-works-title {
+  color: #FFF;
+}
+
+.app-how-it-works-card {
+  text-align: center;
+}
+
+.app-how-it-works-card-title {
+  color: #FFF;
+  //@include app-heading();
+}
+
+.app-how-it-works-card-subtitle {
+  color: #DFD;
+  //@include app-subheading();
+}

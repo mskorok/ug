@@ -1,0 +1,38 @@
+
+.app-checkbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(/img/app/form/unchecked.png);
+  vertical-align: middle;
+}
+
+.app-checkbox-label, .app-radio-label {
+  cursor: pointer;
+  color: $navbar-light-hover-color;
+
+  & span {
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+}
+
+.app-checkbox.checked {
+  background: url(/img/app/form/checked.png);
+}
+
+.app-radio {
+  background: url(/img/app/form/radio_unchecked.png);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.app-radio.checked {
+  background: url(/img/app/form/radio_checked.png);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}

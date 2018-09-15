@@ -1,0 +1,28 @@
+.admin-tb-default {
+  color: #373a3c;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: #666f74;
+  }
+}
+
+.admin-tb-red {
+  color: #990000;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: #e10000;
+  }
+}
+.adventure-list-buttons{
+  width:10em;
+}
+div.awesomplete{
+  display:block;
+}
+
+.btn-info.selected {
+  background-color: #0087AF;
+  border-color: #0087AF;
+}

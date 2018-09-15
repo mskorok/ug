@@ -1,0 +1,16 @@
+
+.pac-item, .pac-item-query {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1rem;
+  color: $app-color-grey;
+}
+
+.pac-item:hover, .pac-item:hover .pac-item-query {
+  color: $app-color-grey-dark;
+  cursor: pointer;
+}
+
+.pac-item-query:after {
+  content: ",";
+}

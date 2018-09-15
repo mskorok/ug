@@ -1,0 +1,48 @@
+
+.app-navbar-search {
+  z-index: 3000;
+  font-size: 0.9rem;
+}
+
+.app-navbar-search-menu {
+  overflow-y: auto;
+  max-height: 80vh;
+  min-width: 100%;
+}
+
+.app-navbar-search-title {
+  color: $app-color-green-dark;
+  font-size: 0.8rem;
+  border-bottom: 1px solid $app-color-grey-light;
+  padding-top: 6px;
+  padding-bottom: 2px;
+}
+
+.app-navbar-search-img {
+  vertical-align: top;
+  margin-right: 0.75rem;
+  display: inline-block;
+}
+
+.app-navbar-search-item-title {
+  font-weight: 700;
+}
+
+.app-navbar-search-item-desc {
+  font-size: 0.7rem;
+}
+  .app-navbar-search-item-desc-head {
+    color: $app-color-grey;
+  }
+    /*.app-navbar-search-item-desc-head span:not(:last-of-type)::after {
+      content: " — ";
+    }*/
+
+  .app-navbar-search-item-desc-stats {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+  }
+    /*.app-navbar-search-item-desc-stats span:not(:empty):not(:last-of-type)::after {
+      content: "•";
+      margin: 0 3px;
+    }*/

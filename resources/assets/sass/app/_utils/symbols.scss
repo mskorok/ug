@@ -1,0 +1,35 @@
+
+.app-s-bullet::after {
+  content: "•";
+  margin: 0 0.5rem;
+}
+
+.app-s-close {
+  color: rgba(0, 0, 0, 0.3);
+
+  &::after {
+    content: "✕";
+
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.app-s-close-bold {
+  color: rgba(0, 0, 0, 0.3);
+
+  &::after {
+    content: "✖";
+
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+/*.app-tag.app-s-close {
+  margin-left: .5px;
+}*/

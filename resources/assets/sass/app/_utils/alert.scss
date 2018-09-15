@@ -1,0 +1,18 @@
+
+.app-alert {
+  background-color: #ffcfcf;
+  border-radius: $input-border-radius;
+  color: #545a5a;
+  padding: 1rem 1.5rem;
+  text-align: center;
+
+  & a {
+    color: #939393;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: #838383;
+    }
+  }
+}

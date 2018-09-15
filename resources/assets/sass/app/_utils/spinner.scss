@@ -1,0 +1,21 @@
+
+.app-spinner {
+  height: 1.5rem;
+  width: 1.5rem;
+  animation: app-spinner-rotate 0.8s infinite linear;
+  border: 3px solid #fff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  //margin-left: -2.5rem;
+  //position: absolute;
+  margin-right: 1rem;
+  margin-left: -3rem;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+@keyframes app-spinner-rotate {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}

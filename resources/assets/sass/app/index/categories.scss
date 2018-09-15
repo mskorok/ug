@@ -1,0 +1,136 @@
+
+.app-category {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin-bottom: $grid-gutter-width;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  &-title {
+    color: #FFF;
+    font-size: 1.5rem;
+  }
+
+  &:hover > &-background {
+    transform: scale(1.1, 1.1);
+  }
+
+  &-card{
+    min-height: 23rem;
+    padding: 7rem 3rem;
+  }
+  &-background{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      transition: transform 1s ease;
+      
+      &:hover{transform: scale(1.1, 1.1);}
+  }
+  &-icon {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  @each $key, $name in $app_categories {
+    &-#{$key} {
+      background: url(#{$img_path}/app/categories/#{$name}.jpg) no-repeat center center / cover;
+
+      &-icon {
+        background: url(#{$img_path}/app/categories/#{$name}_icon.png) no-repeat center center;
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-down(lg) {
+
+  .app-category {
+
+    &-title {
+      font-size: 1.2rem;
+    }
+
+    &-card {
+      min-height: 16rem;
+      padding: 4rem 3.5rem;
+    }
+
+    /*&-icon {
+      width: 70px;
+      height: 70px;
+      background-size: 75%
+    }
+
+    &-6-icon {
+      width: 70px;
+      height: 70px;
+      background-size: 45%
+    }*/
+
+  }
+}
+
+@include media-breakpoint-down(md) {
+
+  .app-category {
+
+    &-title {
+      @include app-subtitle();
+    }
+
+    &-card {
+      min-height: 25rem;
+      padding: 7rem 4rem;
+    }
+
+    /*&-icon {
+      width: 80px;
+      height: 80px;
+      background-size: 100%
+    }*/
+
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+
+  .app-category {
+
+    &-title {
+      font-size: 1.4rem;
+    }
+
+    &-card {
+      min-height: 18rem;
+      padding: 4rem 3.5rem;
+    }
+
+    /*&-icon {
+      width: 60px;
+      height: 60px;
+      background-size: 75%
+    }
+
+    &-6-icon {
+      width: 70px;
+      height: 70px;
+      background-size: 45%
+    }*/
+
+  }
+
+}

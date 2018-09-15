@@ -1,0 +1,102 @@
+
+.app-navbar-auth {
+  color: $app-color-green-front;
+  background-color: $app-color-green;
+  border-bottom: none;
+
+  & .navbar-brand {
+
+    & svg {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $app-color-green-front;
+      @include hover-focus {
+        color: $app-color-green-front;
+        background-color: $app-color-green-dark;
+      }
+    }
+
+    .open > .nav-link,
+    .active > .nav-link,
+    .nav-link.open,
+    .nav-link.active {
+      background-color: $app-color-green-dark;
+      @include plain-hover-focus {
+        color: $app-color-green-front;
+        background-color: $app-color-green-dark;
+      }
+    }
+  }
+}
+
+.app-navbar-auth .app-navbar-hamburger {
+  color: $app-color-green-front;
+
+  &:hover {
+    background: $app-color-green-dark;
+  }
+}
+
+svg.app-navbar-auth-notifications {
+  width: 2.5rem;
+  height: 1.5rem;
+  fill: #009974;
+
+  &:hover {
+    fill: #008964;
+  }
+}
+
+svg.app-navbar-auth-pm {
+  width: 2.5rem;
+  height: 1.3rem;
+  fill: #009974;
+
+  &:hover {
+    fill: #008964;
+  }
+}
+
+svg.app-navbar-auth-hamburger {
+  width: 0.5rem;
+  height: 1rem;
+  fill: #FFF;
+  margin-left: 1rem;
+}
+
+.app-navbar-auth-user-block {
+  border-left: 1px solid #00BD75;
+  width: 6rem;
+    
+  .app-dropdown-toggle-remove {padding-left: 1rem;}    
+    
+  &:hover {
+    background-color: $app-color-green-dark;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+    .app-navbar-auth .navbar-brand {margin-right: 0.8rem;}
+    .app-navbar-auth-user-block {width: 5.1rem;}
+    .app-navbar-auth-user-block .app-dropdown-toggle-remove {padding-left: 0.5rem;}
+}
+
+.app-navbar-auth-user-dropdown {
+  padding-left: 1rem;
+}
+
+.app-navbar-auth-user-photo {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 6rem;
+  display: block;
+}
+
+.app-navbar-auth .app-navbar-link-bordered span {
+  border: 1px solid $app-color-green-front;
+}

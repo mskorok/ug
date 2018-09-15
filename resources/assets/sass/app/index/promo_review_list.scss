@@ -1,0 +1,85 @@
+
+.app-promo-review {
+  border-top: 1px solid #EEE;
+  padding: 1rem;
+
+  & .app-s-bullet {
+    font-size: 0.5rem;
+  }
+}
+
+.app-promo-review-header {
+  margin-bottom: 1rem;
+}
+
+.app-promo-review-photo {
+  display: inline-block;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  vertical-align: top;
+}
+
+.app-promo-review-author {
+  display: inline-block;
+}
+
+.app-promo-review-stats {
+  color: $app-color-grey;
+  font-size: 0.75rem;
+}
+
+.app-promo-review-title {
+  color: $body-color;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 0.7rem;
+}
+
+.app-promo-review-location {
+  color: #565a5c;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 0.9rem;
+}
+
+.app-promo-review-desc {
+  color: #7f8182;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 0.9rem;
+}
+
+.app-promo-review-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.app-promo-review-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+
+  & svg {
+    flex: 0 1 auto;
+    align-self: auto;
+    margin-right: 0.6rem;
+  }
+
+  & span {
+    flex: 0 1 auto;
+    align-self: auto;
+    margin-right: 1.75rem;
+    color: #7f8182;
+    vertical-align: top;
+  }
+}

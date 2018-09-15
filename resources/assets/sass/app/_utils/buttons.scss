@@ -1,0 +1,77 @@
+
+.app-btn-reset {
+  display: inline-block;
+  background: transparent;
+  text-align: left;
+  border: none;
+
+/*  &:hover {
+    color: $input-color;
+  }*/
+}
+
+.app-btn-void {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: $input-line-height;
+  color: $input-color-placeholder;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid $input-border-color;
+  min-width: $dropdown-min-width;
+  border-radius: $input-border-radius;
+  padding: 0.85rem;
+  height: auto !important;
+  text-align: left;
+
+  &:hover {
+    color: $input-color;
+  }
+}
+
+.app-btn-in-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.85rem 1rem;
+  background-color: transparent;
+  color: #f44;
+  font-weight: 700;
+  border: none;
+
+  &:hover {
+    color: #e00;
+  }
+}
+
+/*.app-btn-hidden {
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+
+  &:hover {
+    fill: $app-link-green-hover;
+  }
+}*/
+
+.app-btn-apply {
+  @include app-button-variant($app-color-green-front, $app-color-green);
+}
+
+.app-btn-outline-apply {
+  @include button-outline-variant($app-color-green);
+}
+
+@include media-breakpoint-down(xs) {
+    .app-btn-outline-apply {width: 100%; padding-left: 1em; padding-right: 1em; text-align: center;}
+}
+
+// base outline button for green color background container
+.app-btn-outline {
+  @include button-outline-variant(#FFF);
+  &:hover {
+    background-color: $app-color-green-dark;
+  }
+}
+

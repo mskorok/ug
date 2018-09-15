@@ -1,0 +1,68 @@
+
+.app-profile {
+  background-color: $app-color-grey-lightest;
+}
+
+.app-profile-block-left {
+  text-align: center;
+}
+
+// Profile Star
+
+.app-profile-star-age-container {
+  height: 1.2rem;
+  min-width: 135px;
+}
+
+.app-profile-star-container {
+  background: $app-gradient-green;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .5ch;
+}
+
+svg.app-profile-star {
+  width: .8rem;
+  height: .8rem;
+  display: block;
+  margin: 0.2rem auto;
+  fill: $app-color-green-front;
+}
+
+.app-profile-bottom-border {
+  border-bottom: 1px solid $app-color-grey-light;
+}
+
+.app-profile-social-button {
+  min-width: 385px;
+  margin: 0.25rem;
+}
+
+.app-profile-photo-overlay {
+  height: 1.5rem;
+  background-color: $app-color-green;
+  color: $app-color-green-front;
+  position: relative;
+  top: -2.25rem;
+}
+
+.app-profile-photo {
+  overflow: hidden;
+}
+
+.app-profile-blocked-user-photo {
+  max-width: 100%;
+  height: auto;
+}
+
+svg.app-profile-keylock {
+  fill: $app-color-green;
+}
+
+.app-profile-blocked-user-row {
+  display: inline;
+}
+
+.app-profile-advertisement{
+    img{max-width: 100%;}
+}

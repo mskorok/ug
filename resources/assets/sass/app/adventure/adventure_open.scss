@@ -1,0 +1,221 @@
+.app-activity {
+  background-color: $app-color-grey-lightest;
+  @include app-section();
+}
+
+
+a.app-activity-link, a.app-activity-link:hover, a.app-activity-link:visited {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+a.app-activity-link-post, a.app-activity-link-post:hover, a.app-activity-link-post:visited {
+  color: $app-color-grey;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.app-activity-textarea {
+  border: none transparent;
+  overflow: auto;
+  outline: none;
+  resize: none
+}
+
+.app-activity-block-image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  margin: 0;
+  box-shadow: inset 0 -15rem 20rem -14rem $app-color-grey-dark, inset 0 15rem 20rem -14rem $app-color-grey-dark;
+}
+
+.app-activity-user-avatar {
+  border-radius: 50%;
+  width: 2.7rem;
+  height: 2.7rem;
+  border: 1px solid $app-color-grey-bright;
+}
+
+.app-activity-user-name {
+  margin-left: 1.5rem;
+  color: $app-color-green;
+  &:hover {
+    color: $app-color-green-front;
+  }
+}
+
+.app-activity-share {
+  top: 2rem;
+  right: 2rem;
+}
+
+.app-activity-share > a > svg {
+  width: 1rem;
+  height: 1.3rem;
+  fill-opacity: 1;
+  fill:$app-color-grey-light;
+  &:hover {
+    fill: $app-color-green-front;
+  }
+
+}
+
+.app-activity-block-title {
+  margin: 2rem 0 .75rem 1rem;
+}
+
+.app-activity-friends {
+  height: 15rem;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.app-activity-white-space {
+  height: 4.5rem;
+}
+
+.app-activity-scroll {
+  height: 18rem;
+  overflow-y: scroll;
+  margin-right: -2em;
+  padding-right: 1em;
+}
+
+.app-activity-block-invite-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  box-shadow: inset 0 -80px 80px -70px #FFF;
+  margin-top: 1rem;
+}
+
+.app-activity-going-image {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin: .3rem;
+}
+
+svg.app-activity-icon {
+  width: 2rem;
+  height: 2rem;
+  fill-opacity: 1;
+  fill: $app-color-green-front;
+}
+
+svg.app-activity-icon:hover {
+  fill: $app-color-green;
+}
+
+.app-activity-btn-outline {
+  outline: $app-color-green-front 0;
+
+}
+
+.app-activity-btn-outline > svg.app-icon-gray {
+   fill: $app-color-grey
+}
+
+.app-activity-btn-outline:hover > svg {
+  fill: $app-color-green-front;
+}
+
+.app-responses-block > div.app-card-b-divider:last-child {
+  border-bottom: none;
+  box-shadow: none !important;
+}
+
+
+.app-activity-m-t-quarter {
+  margin-top: .2rem;
+}
+
+.app-activity-new-post {
+  padding-left: 15px;
+}
+
+.app-activity-post-count {
+  margin-left: .5rem;
+  margin-right: 1rem;
+}
+
+.app-activity-reply-form {
+  position: relative;
+  top: -.7rem;
+}
+
+@include media-breakpoint-up(lg) {
+
+  a.app-activity-link, a.app-activity-link:hover, a.app-activity-link:visited {
+    color: $app-color-green-front;
+  }
+  .app-activity-flex {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 30rem;
+  }
+
+  .app-activity-user {
+    height: 5rem;
+
+  }
+
+  .app-activity-info {
+    bottom: 2rem;
+    height: 9rem;
+
+  }
+}
+
+@include media-breakpoint-down(md) {
+
+
+  svg.app-activity-icon {
+    fill: $app-color-grey;
+  }
+
+  svg.app-activity-icon:hover {
+    fill: $app-color-green;
+  }
+
+  .app-activity-user-name {
+    color: $app-color-green;
+    &:hover {
+      color: inherit;
+    }
+  }
+  .app-activity > div:first-child {
+    padding-top: 0;
+  }
+}
+
+
+@include media-breakpoint-down(xsm) {
+
+  .app-activity-user-name {
+    display: block;
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100% !important;
+  }
+
+  .app-activity-btn-outline {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .app-activity-btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+

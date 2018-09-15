@@ -1,0 +1,124 @@
+
+svg.app-icon {
+  vertical-align: middle;
+  width: $font-size-base * $line-height-base/1.25;
+  height: $font-size-base * $line-height-base/1.25;
+  margin-bottom: 1px;
+}
+
+// any green icons with transparent fill inside
+// hearts, comments, etc
+svg.app-icon-stroke {
+  fill: transparent;
+  stroke: $app-color-green;
+  width: 1.6rem;
+  height: 1.6rem;
+
+  &.active {
+    fill: $app-color-green;
+  }
+
+  &[role="button"]:hover {
+    stroke: $app-color-green-darkest;
+  }
+
+  &[role="button"].active:hover {
+    fill: $app-color-green-darkest;
+  }
+}
+
+
+svg.app-icon-stroke-gray {
+  fill: transparent;
+  stroke: $app-color-grey;
+  width: 1.6rem;
+  height: 1.6rem;
+
+  &.active {
+    fill: $app-color-green-lightest;
+    stroke: $app-color-green-lightest;
+  }
+
+  &[role="button"]:hover {
+    stroke: $app-color-grey-dark;
+  }
+
+  &[role="button"].active:hover {
+    fill: $app-color-green-dark;
+    stroke: $app-color-green-dark;
+  }
+}
+
+svg.app-icon-xxl {
+  width: 2rem;
+  height: 2rem;
+}
+
+svg.app-icon-xl {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+svg.app-icon-lg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+svg.app-icon-md {
+  width: 1rem;
+  height: 1rem;
+}
+
+svg.app-icon-before {
+  margin-right: 9px;
+}
+
+svg.app-icon-after {
+  margin-left: 9px;
+}
+
+svg.app-icon-green {
+  fill: $app-color-green;
+
+  &[role="button"]:hover {
+    fill: $app-color-green-darkest;
+  }
+}
+
+svg.app-icon-gray {
+  fill: $app-color-grey;
+}
+
+svg.app-icon-green-front {
+  fill: $app-color-green-front;
+}
+
+svg.app-icon-square {
+  background-color: $app-color-grey;
+  fill: $app-color-grey-lightest;
+  padding: 2px 0px 0px 4px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 2px;
+  vertical-align: top;
+
+  &:hover {
+    background-color: $app-color-grey-dark;
+  }
+}
+
+svg.app-icon-add-photo {
+
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+
+  &[role="button"]:hover {
+    use:last-child {
+      display: none;
+    }
+  }
+
+}
+
