@@ -15,11 +15,7 @@ Urlaubsgluck is a social network for adventurers to help find people with simila
 
 Tech lead, architect:
 
-Mev-Rael Eugene Yelkins
 
-mevrael@gmail.com
-
-+371 202 66 136
 
 # Technical specification
 
@@ -27,47 +23,6 @@ mevrael@gmail.com
 
 # Wireframes
 
-https://marvelapp.com/1jbd89j#9364031
-
-https://marvelapp.com/2176da4#9620407 - chat
-
-# Git
-
-https://gitlab.kodex.lv/mevrael/urlaubs-glueck
-
-# Free Laravel video tutorials
-
-https://laracasts.com/series/laravel-5-fundamentals
-
-https://laracasts.com/series/laravel-5-from-scratch
-
-# Recommended pro JavaScript and ECMAScript 6 articles, videos, tools, etc.
-
-https://github.com/ericelliott/essential-javascript-links
-
-# Laravel documentation
-
-https://laravel.com/docs/5.2
-
-Laravel core GitHub: https://github.com/laravel/framework
-
-Laravel skeleton GitHub: https://github.com/laravel/laravel
-
-# Bootstrap 4 documentation
-
-http://v4-alpha.getbootstrap.com/getting-started/introduction/
-
-GitHub: https://github.com/twbs/bootstrap/tree/v4-dev
-
-# Bunny.js documentation
-
-https://github.com/Mevrael/bunny/wiki
-
-# Set up PhpStorm or any other IDE for PSR2 code sniffer
-
-https://github.com/squizlabs/PHP_CodeSniffer
-
-https://confluence.jetbrains.com/display/PhpStorm/PHP+Code+Sniffer+in+PhpStorm
 
 # Server requirements
 
