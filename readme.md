@@ -39,7 +39,7 @@ Laravel 5.2, Bootstrap 4 alpha, BunnyJS are used.
 
 1. Add new virtual host (for example urlaubsgluck.local) or set up virtual machine / vagrant (vagrant is in git)
 2. DocumentRoot in project_folder/public
-3. git clone ssh://git@gitlab.kodex.lv:15211/mevrael/urlaubs-glueck.git .
+3. git clone.
 4. Create new MySQL DB and user
 5. Install composer.phar, rename to composer if not installed and add to PATH
 6. run "composer install" in terminal ~project root
